@@ -30,6 +30,7 @@ async function runCompletion(message) {
 }
 
 client.on("message", message => {
+    
     console.log(message.body);
     runCompletion(message.body).then(result => message.reply(result));
 })
