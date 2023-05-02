@@ -1,6 +1,7 @@
 const { Client } = require("whatsapp-web.js");
 const qrcode = require("qrcode-terminal");
 const { Configuration, OpenAIApi } = require("openai");
+
 require("dotenv").config();
 
 const client = new Client();
