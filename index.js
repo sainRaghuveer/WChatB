@@ -31,7 +31,7 @@ async function runCompletion(message) {
 }
 
 client.on("message", message => {
-
+    console.log("Raghu")
     console.log(message.body);
     runCompletion(message.body).then(result => message.reply(result));
 })
